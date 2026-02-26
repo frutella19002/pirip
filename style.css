@@ -1,0 +1,85 @@
+.hero {
+  min-height: 50rem;
+  display: grid;
+  background: image("images/unsplash_KaxVB5xh4Nw.svg") center/cover no-repeat;
+  grid-template-areas: "stack";
+}
+
+.hero__overlay {
+  grid-area: stack;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero__container {
+  grid-area: stack;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero__title {
+  font-size: 4rem;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.hero__text {
+  max-width: 30rem;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero__button {
+  width: 10rem;
+  height: 3rem;
+  background: #F23849;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.hero__button:hover {
+  background: rgb(231.8537735849, 15.1462264151, 34.9528301887);
+}
+
+.hero__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3rem;
+}
+
+.hero__card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(0.5rem);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero__card img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+.hero__trainers span {
+  font-size: 2rem;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
